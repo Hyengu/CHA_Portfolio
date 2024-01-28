@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+html, body {
+	height: 100%;
+}
+
+body {
+	padding: 0;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+/* ---------------------------- */
+/* Main */
+#main {
+	width: 100%;
+	height: 1080px;
+	background-color: #D4E4ED;
+}
+
+.contents {
+	background-color: #fcfcfc;
+	float: right;
+	margin-top: 215px;
+	height: 650px;
+	width: 70%;
+}
+
+.m_title {
+	font-size: 75px;
+	float: left;
+	margin: 129px 0 129px 120px;
+	color: #22304a;
+}
+
+/* ---------------------------- */
+/* About */
+#about {
+	width: 100%;
+	height: 1080px;
+	background-color: #fcfcfc;
+	position: relative;
+}
+
+.contents_wrap1 {
+	background-color: #D4E4ED;
+	gap: 10vw;
+	height: 650px;
+	width: 75%;
+	position: absolute;
+	top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#about .contents_wrap1 {
+	margin: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	padding: 60px 60px;
+	max-width: 1400px;
+	align-items: center;
+}
+
+.page2 {
+	height: 50px;
+	margin: 0;
+	padding: 30px 0 0 100px;
+	color: #22304a;
+}
+
+/* 자기소개 */
+.myself {
+	position: relative;
+	left: 20px;	
+}
+
+#about .myself h3 {
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+#about .myself .myself_text p {
+	margin-top: 20px;
+	font-size: 15px;
+}
+.myself_text {
+	width: 220px;
+	text-align : justify;
+}
+
+#about .info_all {
+	display: grid;
+	flex-flow: row wrap;
+	grid-template: max-content max-content/40% calc(60% - 24px);
+	gap: 70px 70px;
+}
+
+#about .contents_wrap1 .info_all .info {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+#about .contents_wrap1 .info_all .info ul {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 10px;
+}
+
+ul {
+	list-style: none;
+}
+
+#about .contents_wrap1 .info_all .info ul li {
+	display: flex;
+	gap: 20px;
+}
+
+#about .contents_wrap1 .info_all .info h2 {
+	color: #22304a;
+	font-size: 16px;
+}
+
+#about .contents_wrap1 .info_all .info ul li p:nth-child(1) {
+	font-weight: 800;
+	font-style: normal;
+	line-height: 1.3;
+	white-space: nowrap;
+	width: 40px;
+	color: #22304a;
+}
+
+#about .contents_wrap1 .info_all .info ul li p:nth-child(2) {
+	letter-spacing: -0.05em;
+	transform: translateY(-1px);
+	font-size: 15px;
+	width: 80%;
+	color: #22304a;
+}
+
+#about .contents_wrap1 .info_all .info ul li p {
+	margin: 0;
+}
+
+#about .contents_wrap1 .info_all .info.skills ul li p.level .progress {
+	width: 180px;
+	height: 12px;
+	margin-left: 25px;
+	appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background:#f0f0f0;
+    border-radius:15px;  
+}
+progress::-webkit-progress-value {
+    border-radius:15px;
+    background: #22304a;
+    
+}
+
+
+/* ---------------------------- */
+/* Work */
+#work {
+	width: 100%;
+	height: 1080px;
+	background-color: #22304a;
+}
+
+.page3 {
+	height: 50px;
+	margin: 0;
+	padding: 30px 0 0 100px;
+	color: #fcfcfc;
+}
+
+.img .dasktop_img {
+	position: absolute;
+}
+
+
+.text {
+	margin-left: 100px;
+	display: flex;
+	flex-direction: column;
+}
+
+.p_contents {
+	color: #22304a;
+	display: flex;
+
+}
+
+.w_title {
+	font-size: 40px;
+	height: 70px;
+	margin: 0;
+}
+
+.p_contents .text p {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+
+.p_contents .text ul li {
+	border-radius: 10rem;
+	border: 2px solid;
+	width: 95px;
+	height: 20px;
+	font-size: 14px;
+	padding: 8px 8px;
+	text-align: center;
+	display: inline-table;
+	margin: 20px 0 50px 0;
+}
+.more_btn {
+	height: 50px;
+	width: 150px;
+	margin: 30px 0 30px 0;
+	border-radius: 10rem;
+	background-color: #22304a;
+	border: none;
+}
+
+.more_btn:hover {
+	box-shadow: 0px 0px 20px #22304a;
+}
+
+.more_btn a {
+	color: white;
+	text-decoration: none;
+}
+
+/* ---------------------------- */
+/* Contact */
+#contact {
+	width: 100%;
+	height: 900px;
+	background-color: #D4E4ED;
+}
+
+.page5 {
+	height: 50px;
+	margin: 0;
+	padding: 30px 0 0 100px;
+	color: #22304a;
+}
+
+.contents_wrap2 {
+	text-align: center;
+	position: relative;
+	top: 15em;
+}
+
+.text2 h3{
+	font-size: 25px;
+	margin: 30px 0 150px;
+}
+
+.contents_wrap2 ul li{
+	display: inline-block;
+}
+
+.contents_wrap2 ul li button {
+	height: 50px;
+	width: 150px;
+	margin: 50px 10px 50px 10px;
+	border-radius: 10rem;
+	background-color: #22304a;
+	border: none;
+}
+
+.contents_wrap2 ul li button:hover {
+	box-shadow: 0px 0px 20px #22304a;
+}
+
+.contents_wrap2 ul li button a {
+	color: white;
+	text-decoration: none;
+}
+
